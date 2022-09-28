@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import ContainerSample from './components/ContainerSample'
+import ContextSample from './components/ContextSample'
+import Counter from './components/Counter'
 import Hello from './components/Hello'
 import Name from './components/Name'
+import Message from './components/Message';
+import UseReducerCounter from './components/UseReducerCounter';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -11,7 +16,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Name />
+    <UseReducerCounter initialValue={0}/>
   </React.StrictMode>
 );
 
