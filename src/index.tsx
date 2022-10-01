@@ -2,13 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { Callback } from './components/Callback'
+import { Clock } from './components/Clock';
 import ContainerSample from './components/ContainerSample'
 import ContextSample from './components/ContextSample'
 import Counter from './components/Counter'
 import Hello from './components/Hello'
 import Name from './components/Name'
 import Message from './components/Message';
+import { Parent } from './components/Parent';
+import UseContextSample from './components/UseContextSample';
+import { UseDebugValueSample } from './components/UseDebugValueSample';
+import { UseImperativeHandleSample } from './components/UseImperativeHandleSample';
+import { UseMemoSample } from './components/UseMemoSample';
 import UseReducerCounter from './components/UseReducerCounter';
+import { UseRefSample } from './components/UseRefSample';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -16,7 +24,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <UseReducerCounter initialValue={0}/>
+    <UseDebugValueSample />
   </React.StrictMode>
 );
 
